@@ -1,0 +1,4 @@
+2016-03-06 10:16:04	[+]	docker	ubuntu-14.04-amd64	ubuntu-14-04-x64
+2016-03-06 10:16:04	[+]	docker	ubuntu-14.04-x64	ubuntu-1404-agent-x64
+2016-03-06 10:30:44	[-]	docker	ubuntu-14.04-amd64	ubuntu-14-04-x64
+2016-03-06 10:30:44	[-]	docker	ubuntu-14.04-x64	ubuntu-1404-agent-x64
