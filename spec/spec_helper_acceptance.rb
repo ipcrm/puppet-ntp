@@ -11,10 +11,9 @@ RSpec.configure do |c|
 
   # Configure all nodes in nodeset
     # Install module and dependencies
-    hosts.each do |host|
-        ENV["PUPPET_INSTALL_TYPE"]='pe'
-        run_puppet_install_helper
-        copy_module_to(host, :source => proj_root, :module_name => 'ntp')
-      end
-    end
+  hosts.each do |host|
+    ENV["PUPPET_INSTALL_TYPE"]='agent'
+    run_puppet_install_helper
+    copy_module_to(host, :source => proj_root, :module_name => 'ntp')
+  end
 end
