@@ -1,4 +1,4 @@
-#simple ntp class
+#simple ntp class 1
 class ntp {
   package { 'ntp':
     ensure => present,
