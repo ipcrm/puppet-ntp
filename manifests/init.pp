@@ -7,4 +7,9 @@ class ntp {
     enable  => true,
     require => Package['ntp'],
   }
+  file { '/etc/ntp.conf':
+    ensure => present,
+    source => 'puppet:///modules/ntp/ntp.conf',
+    notify => Service['ntp'],
+  }
 }
