@@ -1,1 +1,1 @@
-development to master test
+This is a simple module for testing ntp
