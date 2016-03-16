@@ -4,3 +4,4 @@ log
 junit
 Gemfile.lock
 .vagrant
+coverage

@@ -1,0 +1,30 @@
+{
+  "name": "puppet-ntp",
+  "version": "0.1.0",
+  "author": "ipcrm",
+  "summary": "NTP Install/Config",
+  "license": "Apache-2.0",
+  "source": "http://github.com/ipcrm/puppet-ntp",
+  "project_page": "https://github.com/ipcrm/puppet-ntp",
+  "issues_url": "https://github.com/ipcrm/puppet-ntp/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14"
+      ]
+    }
+  ]
+}
