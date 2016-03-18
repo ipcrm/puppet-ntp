@@ -6,13 +6,12 @@ HOSTS:
     image : ubuntu:14.04
     docker_preserve_image: true
     hypervisor : docker
-  fedora-23-x64:
+	centos6-64:
     roles:
-      - agent
-    platform: fedora-23-x86_64
-    image : fedora:23
-    docker_preserve_image: true
-    hypervisor : docker
+     - agent
+    platform: el-6-x86_64
+    image: centos:6.6
+    hypervisor: docker
 CONFIG:
   log_level: debug
   type: git
