@@ -5,12 +5,6 @@ HOSTS:
     platform: ubuntu-14.04-amd64
     image : ubuntu:14.04
     hypervisor : docker
-  centos6-64:
-    roles:
-      - agent
-    platform: el-6-x86_64
-    image: centos:6.6
-    hypervisor: docker
 CONFIG:
   log_level: debug
   type: git
