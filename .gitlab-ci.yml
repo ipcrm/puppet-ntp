@@ -43,7 +43,7 @@ rspec:
   tags:
     - shell
 
-acceptance_check:
+acceptance_ubuntu:
   stage: acceptance
   script:
     - bundle exec rake beaker
@@ -52,3 +52,12 @@ acceptance_check:
   tags:
     - shell
 
+acceptance_centos:
+  stage: acceptance
+  script:
+    - export BEAKER_set=centos-6
+    - bundle exec rake beaker
+  only:
+    - master
+  tags:
+    - shell
