@@ -22,8 +22,6 @@ lint:
     - bundle exec rake lint
   only:
     - master
-  tags:
-    - shell
 
 parser:
   stage: parser
@@ -31,8 +29,6 @@ parser:
     - bundle exec rake syntax
   only:
     - master
-  tags:
-    - shell
 
 rspec:
   stage: rspec
@@ -40,8 +36,6 @@ rspec:
     - bundle exec rake spec
   only:
     - master
-  tags:
-    - shell
 
 acceptance_ubuntu:
   stage: acceptance
@@ -49,8 +43,6 @@ acceptance_ubuntu:
     - bundle exec rake beaker
   only:
     - master
-  tags:
-    - shell
 
 acceptance_centos:
   stage: acceptance
@@ -59,5 +51,3 @@ acceptance_centos:
     - bundle exec rake beaker
   only:
     - master
-  tags:
-    - shell
